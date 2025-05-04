@@ -19,10 +19,10 @@
 #### 二、蓝牙开关可以开启，无法扫描到设备问题：
 添加以下 2 项内容
 1. NVRAM (7C436110-AB2A-4BBB-A880-FE41995C9F82)
-    boot-args -lilubetaall  
+   boot-args -lilubetaall  
 2. NVRAM (7C436110-AB2A-4BBB-A880-FE41995C9F82)  
-      bluetoothExternalDongleFailed - Data - 00
-      bluetoothInternalControllerInfo - Data - 00000000 00000000 00000000 0000
+   bluetoothExternalDongleFailed - Data - 00
+   bluetoothInternalControllerInfo - Data - 00000000 00000000 00000000 0000
 https://www.insanelymac.com/forum/topic/359987-release-macos-sequoia-150/page/4/
 
 #### 三、添加重置Nvram入口方式：
@@ -41,8 +41,8 @@ https://bbs.pcbeta.com/viewthread-1975545-1-1.html
 https://www.bilibili.com/opus/987828407802789892?spm_id_from=333.1387.0.0
 
 #### 五、隔空投送只能接收不能发送的问题：
-前提当然注入三码，退出同一个ID下想互联的设备的ID，清除本机的nvram，然后重新登ID，可以无限制隔空投送和接力。不行再重启就可以了，可能需要iPhone也做一样操作。
-
+前提当然注入三码，退出同一个ID下想互联的设备的ID，清除本机的nvram，然后重新登ID，可以无限制隔空投送和接力。不行再重启就可以了，可能需要iPhone也做一样操作。最好按照下图那样配置一下：
+![](README/%E6%88%AA%E5%B1%8F2025-05-04%2019.31.52.png)
 #### 六、还有问题未解决的：（已解决的盆友可以留言）
 1. 睡眠后无法USB唤醒。
 2. iPhone镜像无法连接。
