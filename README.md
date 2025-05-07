@@ -45,7 +45,8 @@ https://www.bilibili.com/opus/987828407802789892?spm_id_from=333.1387.0.0
 
 ![](README/%E6%88%AA%E5%B1%8F2025-05-04%2019.31.52.png)
 
-#### 六、还有问题未解决的：（已解决的盆友可以留言）
-1. 睡眠后无法USB唤醒。
-2. iPhone镜像无法连接。
+#### 六、USB唤醒不了，睡眠立即唤醒问题：
+1. 定制USB，内建蓝牙USB扣，避免立即唤醒，参考：[https://apple.sqlsec.com/6-%E5%AE%9E%E7%94%A8%E5%A7%BF%E5%8A%BF/6-1/](https://apple.sqlsec.com/6-%E5%AE%9E%E7%94%A8%E5%A7%BF%E5%8A%BF/6-1/)
+2. ACPI中，禁用SSDT-GPRW.aml，禁用补丁（change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml），避免无法USB唤醒。
+
 
